@@ -115,9 +115,9 @@ Git peut communiquer avec GitHub de deux façons :
 
 ---
 
-## Méthode HTTPS
-
 # Créer un dépôt Git à partir d'un dossier local
+
+## Méthode HTTPS
 
 ## 1. Créer le dépôt sur GitHub
 
