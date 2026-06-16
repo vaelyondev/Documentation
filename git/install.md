@@ -117,31 +117,76 @@ Git peut communiquer avec GitHub de deux façons :
 
 ## Méthode HTTPS
 
-Lors de la création d'un dépôt GitHub, cliquer sur le bouton **Code** puis sélectionner **HTTPS**.
+# Créer un dépôt Git à partir d'un dossier local
 
-Exemple d'URL :
+## 1. Créer le dépôt sur GitHub
+
+1. Ouvrir GitHub
+2. Cliquer sur **New Repository**
+3. Donner un nom au dépôt
+4. Cliquer sur **Create Repository**
+5. Copier l'URL HTTPS du dépôt
+
+Exemple :
 
 ```text
 https://github.com/utilisateur/mon-projet.git
 ```
 
-Pour associer un dépôt local à un dépôt GitHub :
+## 2. Ouvrir un terminal dans le dossier du projet
+
+```bash
+cd chemin/vers/mon-projet
+```
+
+## 3. Initialiser Git
+
+```bash
+git init
+```
+
+## 4. Associer le dépôt GitHub
 
 ```bash
 git remote add origin https://github.com/utilisateur/mon-projet.git
 ```
 
-Vérifier la connexion :
+Vérifier :
 
 ```bash
 git remote -v
 ```
 
-Résultat attendu :
+## 5. Ajouter les fichiers
 
 ```bash
-origin  https://github.com/utilisateur/mon-projet.git (fetch)
-origin  https://github.com/utilisateur/mon-projet.git (push)
+git add .
+```
+
+## 6. Créer le premier commit
+
+```bash
+git commit -m "premier-commit"
+```
+
+## 7. Envoyer le projet sur GitHub
+
+```bash
+git push -u origin master
+```
+
+Ou si le dépôt utilise `main` :
+
+```bash
+git push -u origin main
+```
+
+## Workflow quotidien
+
+```bash
+git add .
+git commit -m "description des modifications"
+git push
 ```
 
 Avec HTTPS, GitHub demandera une authentification lors des premières opérations de push.
