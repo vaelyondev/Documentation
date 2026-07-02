@@ -6,6 +6,7 @@ Dépôt de documentation sur le développement web.
 
 - [HTML](./html/)
 - [CSS](./css/)
-- [Sass](./sass/)
 - [Git](./git/)
+- [Sass](./sass/)
 - [Node](./node/)
+- [JavaScript](./javascript/)
